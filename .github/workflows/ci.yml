@@ -1,61 +1,43 @@
-name: ci/cd
+name: CI
 
 on:
   push:
-    branches: [main]
-    paths:
-      - packages/**
-      - pnpm-lock.yaml
-      - package.json
-      - .github/workflows/ci.yml
+    branches-ignore:
+      # Renovate branches are always Pull Requests.
+      # We don't need to run CI twice (push+pull_request)
+      - "renovate/**"
   pull_request:
-    branches: [main]
-    paths:
-      - packages/**
-      - pnpm-lock.yaml
-      - package.json
-      - .github/workflows/ci.yml
+    paths-ignore:
+      # should sync with ci-check.yml as a workaround to bypass github checks
+      - "docs/**"
+      - "examples/**"
+
+permissions: {}
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+  # Tests dev-only scripts across all supported dev environments
+  test-dev:
+    # l10nbot does not affect dev scripts.
+    if: ${{ github.actor != 'l10nbot' }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
-
+        os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - run: echo "${{ github.actor }}"
+      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
-          version: 7
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+          # fetch all tags which are required for `pnpm release:changelog`
+          fetch-depth: 0
+      - name: Set up pnpm
+        uses: pnpm/action-setup@d882d12c64e032187b2edb46d3a0d003b7a43598 # v2.4.0
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
+          node-version: 18
+          cache: "pnpm" # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-dependencies
       - run: pnpm install
       - run: pnpm build
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
       - run: pnpm test
-  analyze:
-    name: Analyze
-    runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-    strategy:
-      fail-fast: false
-      matrix:
-        language: ["javascript"]
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
-        with:
-          languages: ${{ matrix.language }}
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
