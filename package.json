@@ -15,7 +15,7 @@
         "eslint:ci": "eslint . --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
         "prettier": "pretty-quick --ignore-path .eslintignore",
         "prettier:all": "prettier --write . --ignore-path .eslintignore",
-        "test": "node scripts/test.mjs",
+        "test": "lerna run test",
         "tc": "node test/cli.js",
         "typescript": "lerna run --no-bail --parallel typescript"
     },
