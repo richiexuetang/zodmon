@@ -17,32 +17,32 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "1206121481679517851"
-      },
-      {
-        "file": "README.md",
-        "hash": "5448408086695400924"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "12327532939710271741"
+        "file": "package.json",
+        "hash": "14278308015175753218"
       },
       {
         "file": "nx.json",
         "hash": "17315747625918862830"
       },
       {
-        "file": "lerna.json",
-        "hash": "7281632487525329251"
+        "file": "pnpm-workspace.yaml",
+        "hash": "1206121481679517851"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "12327532939710271741"
+      },
+      {
+        "file": "README.md",
+        "hash": "5448408086695400924"
       },
       {
         "file": ".gitignore",
         "hash": "16041338103813760385"
       },
       {
-        "file": "package.json",
-        "hash": "14278308015175753218"
+        "file": "lerna.json",
+        "hash": "7281632487525329251"
       }
     ],
     "projectFileMap": {
@@ -294,10 +294,6 @@
           "hash": "8138235785678669111"
         },
         {
-          "file": "packages/axios/SECURITY.md",
-          "hash": "7731169920661422471"
-        },
-        {
           "file": "packages/axios/examples/define-types.ts",
           "hash": "6537749088455188440"
         },
@@ -355,7 +351,7 @@
         },
         {
           "file": "packages/axios/package.json",
-          "hash": "16278710797762617964",
+          "hash": "16909918477217915046",
           "deps": [
             "npm:@jest/globals",
             "npm:@jest/types",
@@ -405,10 +401,6 @@
         {
           "file": "packages/axios/tsconfig.json",
           "hash": "16900197361515639810"
-        },
-        {
-          "file": "packages/axios/tsup.config.js",
-          "hash": "14618333914270781644"
         },
         {
           "file": "packages/axios/tsup.config.ts",
