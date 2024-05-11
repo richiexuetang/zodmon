@@ -1,0 +1,582 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.3.4",
+  "deps": {
+    "@changesets/cli": "2.26.1",
+    "nx": "19.0.2",
+    "lerna": "8.1.2",
+    "typescript": "5.0.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "1206121481679517851"
+      },
+      {
+        "file": "README.md",
+        "hash": "5448408086695400924"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "12327532939710271741"
+      },
+      {
+        "file": "nx.json",
+        "hash": "17315747625918862830"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "7281632487525329251"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16041338103813760385"
+      },
+      {
+        "file": "package.json",
+        "hash": "14278308015175753218"
+      }
+    ],
+    "projectFileMap": {
+      "@zodmon/core": [
+        {
+          "file": "packages/core/examples/airbytes-api.ts",
+          "hash": "2366614443483935403"
+        },
+        {
+          "file": "packages/core/examples/aitbytes.ts",
+          "hash": "17816832621322261093"
+        },
+        {
+          "file": "packages/core/examples/dev.to/api-key-plugin.ts",
+          "hash": "3328311601995206464"
+        },
+        {
+          "file": "packages/core/examples/dev.to/articles.ts",
+          "hash": "18218166209991048172"
+        },
+        {
+          "file": "packages/core/examples/dev.to/comments.ts",
+          "hash": "7216816999263182091"
+        },
+        {
+          "file": "packages/core/examples/dev.to/example.ts",
+          "hash": "7834589308618372641"
+        },
+        {
+          "file": "packages/core/examples/dev.to/followers.ts",
+          "hash": "2431017093683269600"
+        },
+        {
+          "file": "packages/core/examples/dev.to/follows.ts",
+          "hash": "10229831700657773014"
+        },
+        {
+          "file": "packages/core/examples/dev.to/params.ts",
+          "hash": "14315210617633773217"
+        },
+        {
+          "file": "packages/core/examples/dev.to/users.ts",
+          "hash": "16623156933384378517"
+        },
+        {
+          "file": "packages/core/examples/io-ts-types.ts",
+          "hash": "647065328865186338"
+        },
+        {
+          "file": "packages/core/examples/jsonplaceholder.ts",
+          "hash": "8870859678939176781"
+        },
+        {
+          "file": "packages/core/examples/large-api.ts",
+          "hash": "17773748329131714392"
+        },
+        {
+          "file": "packages/core/examples/types-from-definition.ts",
+          "hash": "15085528899610774828"
+        },
+        {
+          "file": "packages/core/examples/typescript-types.ts",
+          "hash": "15537067582201305886"
+        },
+        {
+          "file": "packages/core/examples/zod-types.ts",
+          "hash": "16919188118747792528"
+        },
+        {
+          "file": "packages/core/jest.config.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "5907942577917293838",
+          "deps": [
+            "npm:@jest/globals",
+            "npm:@jest/types",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:form-data",
+            "npm:fp-ts",
+            "npm:io-ts",
+            "npm:jest",
+            "npm:rimraf",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:tsup",
+            "npm:typescript",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/core/src/__snapshots__/zodios.test.ts.snap",
+          "hash": "17735587253272499084"
+        },
+        {
+          "file": "packages/core/src/api.test.ts",
+          "hash": "3674818184499015416"
+        },
+        {
+          "file": "packages/core/src/api.ts",
+          "hash": "7130092221335666173"
+        },
+        {
+          "file": "packages/core/src/fetcher-providers/fetcher-provider.types.ts",
+          "hash": "6340798338941648568"
+        },
+        {
+          "file": "packages/core/src/fetcher-providers/index.ts",
+          "hash": "9792403034553052426"
+        },
+        {
+          "file": "packages/core/src/fetcher-providers/mock-provider.ts",
+          "hash": "6859550631502663101"
+        },
+        {
+          "file": "packages/core/src/hooks.ts",
+          "hash": "12176162820742939946"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "13345229354950393062"
+        },
+        {
+          "file": "packages/core/src/plugins/form-data.plugin.ts",
+          "hash": "15778700775763359585"
+        },
+        {
+          "file": "packages/core/src/plugins/form-data.utils.ts",
+          "hash": "6685194703581774753"
+        },
+        {
+          "file": "packages/core/src/plugins/form-url.plugin.ts",
+          "hash": "11680652823019077220"
+        },
+        {
+          "file": "packages/core/src/plugins/header.plugin.ts",
+          "hash": "4404023241763225329"
+        },
+        {
+          "file": "packages/core/src/plugins/index.ts",
+          "hash": "3729263023097480529"
+        },
+        {
+          "file": "packages/core/src/plugins/validation.plugin.test.ts",
+          "hash": "11832631315596405278"
+        },
+        {
+          "file": "packages/core/src/plugins/validation.plugin.ts",
+          "hash": "15332232350921962647"
+        },
+        {
+          "file": "packages/core/src/plugins/zodmon-plugins.test.ts",
+          "hash": "11989588129454907898"
+        },
+        {
+          "file": "packages/core/src/plugins/zodmon-plugins.ts",
+          "hash": "6990496046308585795"
+        },
+        {
+          "file": "packages/core/src/plugins/zodmon-plugins.types.ts",
+          "hash": "9617463754969134166"
+        },
+        {
+          "file": "packages/core/src/type-providers/index.ts",
+          "hash": "16352573012250326197"
+        },
+        {
+          "file": "packages/core/src/type-providers/type-provider.io-ts.ts",
+          "hash": "9511580470165667857"
+        },
+        {
+          "file": "packages/core/src/type-providers/type-provider.test.ts",
+          "hash": "14099582816142474274"
+        },
+        {
+          "file": "packages/core/src/type-providers/type-provider.types.ts",
+          "hash": "17986207877627976992"
+        },
+        {
+          "file": "packages/core/src/type-providers/type-provider.typescript.ts",
+          "hash": "8464492806646363931"
+        },
+        {
+          "file": "packages/core/src/type-providers/type-provider.zod.ts",
+          "hash": "10116386159613085227"
+        },
+        {
+          "file": "packages/core/src/utils.test.ts",
+          "hash": "107928519397632469"
+        },
+        {
+          "file": "packages/core/src/utils.ts",
+          "hash": "16505761508468865288"
+        },
+        {
+          "file": "packages/core/src/utils.types.test.ts",
+          "hash": "6708710791226107353"
+        },
+        {
+          "file": "packages/core/src/utils.types.ts",
+          "hash": "5479835717057283481"
+        },
+        {
+          "file": "packages/core/src/zodmon-error.ts",
+          "hash": "15154832704045937851"
+        },
+        {
+          "file": "packages/core/src/zodmon-request.test.ts",
+          "hash": "8344164864614781590"
+        },
+        {
+          "file": "packages/core/src/zodmon.test.ts",
+          "hash": "928320621657147488"
+        },
+        {
+          "file": "packages/core/src/zodmon.ts",
+          "hash": "13695770232897838935"
+        },
+        {
+          "file": "packages/core/src/zodmon.types.ts",
+          "hash": "11029408581265111478"
+        },
+        {
+          "file": "packages/core/tsconfig.build.json",
+          "hash": "3015775635013646298"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "10108598319036224044"
+        },
+        {
+          "file": "packages/core/tsup.config.ts",
+          "hash": "1842112069545936861"
+        }
+      ],
+      "@zodmon/axios": [
+        {
+          "file": "packages/axios/.gitignore",
+          "hash": "12578770357048054420"
+        },
+        {
+          "file": "packages/axios/.npmignore",
+          "hash": "13494937660551793507"
+        },
+        {
+          "file": "packages/axios/README.md",
+          "hash": "8138235785678669111"
+        },
+        {
+          "file": "packages/axios/SECURITY.md",
+          "hash": "7731169920661422471"
+        },
+        {
+          "file": "packages/axios/examples/define-types.ts",
+          "hash": "6537749088455188440"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/api-key-plugin.ts",
+          "hash": "3328311601995206464"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/articles.ts",
+          "hash": "18218166209991048172"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/comments.ts",
+          "hash": "7216816999263182091"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/example.ts",
+          "hash": "5740849149904428107"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/followers.ts",
+          "hash": "2431017093683269600"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/follows.ts",
+          "hash": "10229831700657773014"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/params.ts",
+          "hash": "14315210617633773217"
+        },
+        {
+          "file": "packages/axios/examples/dev.to/users.ts",
+          "hash": "16623156933384378517"
+        },
+        {
+          "file": "packages/axios/examples/io-ts-types.ts",
+          "hash": "1571710733690162636"
+        },
+        {
+          "file": "packages/axios/examples/jsonplaceholder.ts",
+          "hash": "10025118060435880312"
+        },
+        {
+          "file": "packages/axios/examples/types-from-definition.ts",
+          "hash": "15085528899610774828"
+        },
+        {
+          "file": "packages/axios/examples/typescript-types.ts",
+          "hash": "9793146301446266168"
+        },
+        {
+          "file": "packages/axios/jest.config.ts",
+          "hash": "4638556453202261419"
+        },
+        {
+          "file": "packages/axios/package.json",
+          "hash": "16278710797762617964",
+          "deps": [
+            "npm:@jest/globals",
+            "npm:@jest/types",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/multer",
+            "npm:@types/node",
+            "@zodmon/core",
+            "npm:axios",
+            "npm:express",
+            "npm:fp-ts",
+            "npm:io-ts",
+            "npm:jest",
+            "npm:multer",
+            "npm:rimraf",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:tsup",
+            "npm:typescript",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/axios/src/axios-provider.ts",
+          "hash": "10840721371717306561"
+        },
+        {
+          "file": "packages/axios/src/index.ts",
+          "hash": "2182964487522645788"
+        },
+        {
+          "file": "packages/axios/src/utils.ts",
+          "hash": "1619655751617112956"
+        },
+        {
+          "file": "packages/axios/src/zodmon.test.ts",
+          "hash": "3917414947180550904"
+        },
+        {
+          "file": "packages/axios/src/zodmon.ts",
+          "hash": "1812470359980020160"
+        },
+        {
+          "file": "packages/axios/tsconfig.build.json",
+          "hash": "3015775635013646298"
+        },
+        {
+          "file": "packages/axios/tsconfig.json",
+          "hash": "16900197361515639810"
+        },
+        {
+          "file": "packages/axios/tsup.config.js",
+          "hash": "14618333914270781644"
+        },
+        {
+          "file": "packages/axios/tsup.config.ts",
+          "hash": "14618333914270781644"
+        }
+      ],
+      "@zodmon/react": [
+        {
+          "file": "packages/react/.gitignore",
+          "hash": "12578770357048054420"
+        },
+        {
+          "file": "packages/react/.npmignore",
+          "hash": "11349708566199694287"
+        },
+        {
+          "file": "packages/react/README.md",
+          "hash": "16623481736635358953"
+        },
+        {
+          "file": "packages/react/examples/react.tsx",
+          "hash": "488976409211121442"
+        },
+        {
+          "file": "packages/react/jest.config.ts",
+          "hash": "2883066484662890902"
+        },
+        {
+          "file": "packages/react/package.json",
+          "hash": "11548485623469759673",
+          "deps": [
+            "npm:@jest/globals",
+            "npm:@jest/types",
+            "npm:@tanstack/react-query",
+            "npm:@testing-library/dom",
+            "npm:@testing-library/jest-dom",
+            "npm:@testing-library/react",
+            "npm:@testing-library/react-hooks",
+            "npm:@testing-library/user-event",
+            "npm:@types/cors",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/react",
+            "@zodmon/axios",
+            "@zodmon/core",
+            "npm:cors",
+            "npm:cross-fetch",
+            "npm:express",
+            "npm:fp-ts",
+            "npm:io-ts",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-test-renderer",
+            "npm:rimraf",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:tsup",
+            "npm:typescript",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/react/src/hooks.spec.tsx",
+          "hash": "9716758530576601460"
+        },
+        {
+          "file": "packages/react/src/hooks.ts",
+          "hash": "3401512917773631818"
+        },
+        {
+          "file": "packages/react/src/index.ts",
+          "hash": "3677283437521456306"
+        },
+        {
+          "file": "packages/react/src/utils.test.ts",
+          "hash": "1617176990726926648"
+        },
+        {
+          "file": "packages/react/src/utils.ts",
+          "hash": "5753479317411949385"
+        },
+        {
+          "file": "packages/react/tsconfig.build.json",
+          "hash": "8505317331156847972"
+        },
+        {
+          "file": "packages/react/tsconfig.json",
+          "hash": "9865340478283860279"
+        },
+        {
+          "file": "packages/react/tsup.config.js",
+          "hash": "14618333914270781644"
+        },
+        {
+          "file": "packages/react/tsup.config.ts",
+          "hash": "14618333914270781644"
+        }
+      ],
+      "@zodmon/openapi": [
+        {
+          "file": "packages/openapi/examples/server.ts",
+          "hash": "9838256389135255907"
+        },
+        {
+          "file": "packages/openapi/jest.config.ts",
+          "hash": "15608259927672110404"
+        },
+        {
+          "file": "packages/openapi/package.json",
+          "hash": "7696049761135559621",
+          "deps": [
+            "npm:openapi-types",
+            "npm:zod-to-json-schema",
+            "npm:@jest/globals",
+            "npm:@jest/types",
+            "npm:@types/jest",
+            "npm:@types/multer",
+            "npm:@types/node",
+            "npm:@types/swagger-ui-express",
+            "@zodmon/core",
+            "npm:axios",
+            "npm:express",
+            "npm:jest",
+            "npm:rimraf",
+            "npm:swagger-ui-express",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:tsup",
+            "npm:typescript",
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "packages/openapi/src/__snapshots__/openapi.test.ts.snap",
+          "hash": "10178596099650473811"
+        },
+        {
+          "file": "packages/openapi/src/index.ts",
+          "hash": "5471124622392176027"
+        },
+        {
+          "file": "packages/openapi/src/openapi.test.ts",
+          "hash": "3554003282775256689"
+        },
+        {
+          "file": "packages/openapi/src/openapi.ts",
+          "hash": "13391724345434448322"
+        },
+        {
+          "file": "packages/openapi/src/utils.ts",
+          "hash": "9860000297851333709"
+        },
+        {
+          "file": "packages/openapi/tsconfig.build.json",
+          "hash": "11290940545553401542"
+        },
+        {
+          "file": "packages/openapi/tsconfig.json",
+          "hash": "15072035491371245169"
+        },
+        {
+          "file": "packages/openapi/tsup.config.ts",
+          "hash": "14618333914270781644"
+        }
+      ]
+    }
+  }
+}
