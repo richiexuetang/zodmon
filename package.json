@@ -1,0 +1,30 @@
+{
+    "name": "@zodmon/monorepo",
+    "version": "1.0.0-beta.0",
+    "private": true,
+    "scripts": {
+        "preinstall": "npx only-allow pnpm",
+        "deduplicate": "pnpm dedupe",
+        "build": "lerna run build --ignore docs",
+        "release:version": "lerna version --no-changelog --no-push --no-git-tag-version --no-private --force-publish=@mui/core-downloads-tracker",
+        "release:build": "lerna run --concurrency 8 --no-private build --skip-nx-cache",
+        "release:changelog": "node scripts/releaseChangelog.mjs",
+        "release:publish": "pnpm publish --recursive --tag latest",
+        "release:publish:dry-run": "pnpm publish --recursive --tag latest --registry=\"http://localhost:4873/\"",
+        "release:tag": "node scripts/releaseTag.mjs",
+        "eslint": "eslint . --cache --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
+        "eslint:ci": "eslint . --report-unused-disable-directives --ext .js,.ts,.tsx --max-warnings 0",
+        "prettier": "pretty-quick --ignore-path .eslintignore",
+        "prettier:all": "prettier --write . --ignore-path .eslintignore",
+        "test": "node scripts/test.mjs",
+        "tc": "node test/cli.js",
+        "typescript": "lerna run --no-bail --parallel typescript"
+    },
+    "devDependencies": {
+        "@changesets/cli": "2.26.1",
+        "nx": "19.0.2",
+        "lerna": "8.1.2",
+        "typescript": "5.0.4"
+    },
+    "packageManager": "pnpm@8.15.4"
+}
