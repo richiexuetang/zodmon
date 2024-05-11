@@ -1,6 +1,6 @@
 import type { Config } from "@jest/types";
 
-// Objet synchrone
+// Objet synchronize
 const config: Config.InitialOptions = {
   verbose: true,
   moduleFileExtensions: ["ts", "js", "json", "node"],
